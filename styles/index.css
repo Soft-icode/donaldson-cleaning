@@ -75,7 +75,8 @@ nav .nav_links a::after {
 nav .nav_links a:hover::after {
   width: 100%;
 }
-nav .nav_icons{
+nav .nav_icons,
+.times{
     display: none;
 }
 .scrolled {
@@ -141,7 +142,7 @@ nav .nav_icons{
   margin-bottom: 20px;
 }
 .mission img {
-  width: 45%;
+  width: 50%;
 }
 
 .services {
@@ -181,9 +182,47 @@ nav .nav_icons{
 }
 .services .service_card img {
   width: 100%;
-  height: 280px;
+  height: 270px;
   border-radius: 10px;
 }
+
+.clients{
+    padding: 40px 90px;
+    background-color: #fff;
+}
+.clients > h2{
+    font-size: 40px;
+}
+.clients div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+}
+
+footer{
+    padding: 80px 90px 140px;
+    display: flex;
+    justify-content: space-between;
+}
+footer > div{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+footer #contactus{
+    width: 50%;
+}
+footer #logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+footer img {
+    width: 120px;
+  }
 
 @media screen and (max-width: 768px) {
   nav {
@@ -259,11 +298,33 @@ nav .nav_icons{
     line-height: 20px;
   }
   .services .service_card:last-child {
-    width: 100%;
-    margin-top: 20px;
-    height: fit-content;
+    font-size: 18px;
   }
   .services .service_card img {
     height: 200px;
+  }
+  
+.clients{
+    padding: 50px 20px;
+}
+.clients > h2{
+    font-size: 26px;
+}
+.clients div{
+    font-size: 18px;
+    flex-direction: column;
+}
+
+footer{
+    padding: 80px 20px;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 28px;
+}
+footer #contactus{
+    width: 100%;
+}
+footer img {
+    width: 80px;
   }
 }
