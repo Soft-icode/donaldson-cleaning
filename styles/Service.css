@@ -78,3 +78,13 @@
   .scrolled #logo {
     color: #0d0d0d;
   }
+
+  
+@media screen and (max-width: 768px) {
+    nav {
+      padding: 20px;
+    }
+    nav .nav_links {
+      display: none;
+    }
+}

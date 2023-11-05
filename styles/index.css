@@ -192,7 +192,7 @@ nav .nav_links a:hover::after {
     width: 100%;
   }
   .hero .hero_text h2 {
-    font-size: 37px;
+    font-size: 35px;
     line-height: 50px;
   }
 
@@ -222,6 +222,7 @@ nav .nav_links a:hover::after {
     height: 230px;
     width: 47%;
     font-size: 18px;
+    line-height: 20px;
   }
   .services .service_card:last-child {
     width: 100%;
