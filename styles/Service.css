@@ -1,55 +1,80 @@
 /* Navbar Styling */
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
     outline: 0;
-    font-family: 'Cairo', sans-serif;
-}
-a{
+    font-family: "Cairo", sans-serif;
+  }
+  a {
     text-decoration: none;
     color: #0d0d0d;
-}
-body{
+  }
+  body {
+    position: relative;
     background: #f5f5f5;
-}
-nav{
+    overflow-x: hidden;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 10px 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0px 3px #807f7f4d;
-}
-nav img{
-    width: 90px;
-}
-nav .nav_links{
+    transition: 0.7s ease-in-out;
+  }
+  nav #logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 9px;
+    line-height: 12px;
+  }
+  nav img {
+    width: 60px;
+  }
+  nav .nav_links {
     width: 50%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: 65px;
     font-size: 20px;
-}
-nav .nav_links a{
+  }
+  nav .nav_links a {
     position: relative;
-}
-nav .nav_links a::after,
-.nav_links .active::after{
-    content: '';
+  }
+  nav .nav_links a::after,
+  .nav_links .active::after {
+    content: "";
     position: absolute;
     bottom: 0px;
     left: 0;
     height: 3px;
-    background: linear-gradient(to right, transparent ,#DDDF8C);
+    background: linear-gradient(to right, transparent, #dddf8c);
     transition: all 0.3s ease;
-}
-.nav_links .active::after{
+  }
+  .nav_links .active::after {
     width: 100%;
-}
-nav .nav_links a::after{
+  }
+  nav .nav_links a::after {
     width: 0;
-}
-nav .nav_links a:hover::after{
+  }
+  nav .nav_links a:hover::after {
     width: 100%;
-}
+  }
+  .scrolled {
+    transition: 0.7s ease-in-out;
+    background: #f5f5f5;
+    color: #0d0d0d;
+  }
+  .scrolled .nav_links a {
+    color: #0d0d0d;
+  }
+  .scrolled #logo {
+    color: #0d0d0d;
+  }
