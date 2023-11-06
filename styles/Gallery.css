@@ -87,12 +87,81 @@ nav .nav_icons,
   color: #0d0d0d;
 }
 
-main{
-  height: 50vh;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.gallery{
+  padding: 100px;
+  background-color: #F4F4F4;
+}
+.gallery h1 {
+  text-align: center;
+  font-size: 32px;
+  border-bottom: 40px;
+  position: relative;
+}
+.gallery h1::after{
+  content: '';
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: red;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+.gallery p {
+  margin-top: 50px;
+  text-align: center;
+  
+}
+.gallery a{
+  
+  color: green;
+}
+.container{
+  padding: 8%;
+  width: fit-content;
+  
+}
+.image-row {
+display: flex;
+
+justify-content: space-between;
+align-items: center;
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  padding: 3px;
+}
+.text-hover{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 10px;
+  color: rgb(10, 10, 10);
+  background-color: rgb(231, 227, 227);
+  border-radius: 6px;
+  text-align: center;
+  cursor: cell;
+}
+.text-hover{
+  display: none;
+}
+.image-container:hover .text-hover{
+  display: block;
+}
+
+.image-container img {
+max-width: 100%; 
+max-height: auto;
+display: block;
+border-radius: 6px ;
+}
+#images{
+  height:370px;
+   width:100%;
 }
 
 footer {
