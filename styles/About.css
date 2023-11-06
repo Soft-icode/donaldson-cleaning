@@ -17,12 +17,12 @@
   }
   nav {
     background: #f5f5f5;
+    color: #0d0d0d;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    background-color: transparent;
     padding: 10px 90px;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@
     width: 60px;
   }
   nav .nav_links {
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
     gap: 65px;
@@ -51,7 +51,6 @@
   }
   nav .nav_links a {
     position: relative;
-    color: #f5f5f5;
   }
   nav .nav_links a::after,
   .nav_links .active::after {
@@ -87,12 +86,54 @@
   .scrolled #logo {
     color: #0d0d0d;
   }
-  main{
-    height: 50vh;
+  header .header_text{
     background: #fff;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 26px;
+  }
+  .mission {
+    padding: 30px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #bebebe69;
+
+  }
+  .mission article {
+    width: 40%;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .mission article h4 {
+    font-family: roboto;
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+  .mission img {
+    width: 50%;
+  }
+  .mission article ol{
+    font-size: 22px;
+    line-height: 30px;
+    margin-left: 20px;
+  }
+
+  .rules{
+    padding: 30px 90px;
+    font-size: 20px;
+  }
+  .rules h4{
+    font-family: roboto;
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+  .rules ol li{
+    margin-left: 20px;
+    margin-top: 10px;
   }
 
   footer{
@@ -145,6 +186,7 @@ footer img {
           display: block;
         position: absolute;
         right: 60px;
+        color: #0d0d0d;
       }
       .times{
           display: none;
@@ -152,6 +194,36 @@ footer img {
           position: absolute;
           right: 43px;
           top: 30px;
+      }
+      .mission {
+        padding: 20px;
+        flex-direction: column;
+      }
+      .mission article {
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+      }
+      .mission article h4 {
+        font-size: 35px;
+      }
+      .mission img {
+        width: 100%;
+      }
+      .mission article ol{
+        font-size: 20px;
+      }
+      .rules{
+        padding: 20px;
+        font-size: 18px; 
+        line-height: 25px;
+      }
+      .rules h4{
+        line-height: 35px;
+        font-size: 35px;
+      }
+      .rules ol{
+        
       }
 
       footer{
